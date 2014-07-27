@@ -1,0 +1,22 @@
+If one can race 5 horses at a time and know only which horse got first, second and third
+What is the minimun number of races one can do to find the 3 fastest horses of 25?
+
+9 Races
+
+Do 5 races, each involving 5 horses that have not yet raced:
+    Races:
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+Now pick the first horse of every race and race them together. Do the same for seconds and thirds.
+Note that we can eliminate some horses:
+
+        1 2 3 x x
+        1 2 x x x
+        1 x x x x
+        x x x x x
+        x x x x x
+
+We can now race the five remaining horses and find the fastest 3
